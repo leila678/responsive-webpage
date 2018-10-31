@@ -45,7 +45,7 @@ header{
     padding:1rem 2rem;
     color: black;
     display: block;
-    background-image: url(/local-image/download.jpg);
+    background-image: url(/local-image/header/download.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
