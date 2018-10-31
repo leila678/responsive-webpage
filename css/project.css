@@ -1,0 +1,229 @@
+@import url('https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4WxKOzY.woff2');
+/* You must use a DIFFERENT FONT THAT THIS ONE as your webfont */
+
+/*************************************************
+            DEFAULTS
+*************************************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+html{
+    font-size: 16px;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    /* change this font stack to your own choices */
+    line-height: 1.5;
+}
+p{
+
+}
+a{
+}
+ul{
+  
+}
+ol{
+    
+}
+li{
+    
+}
+img{
+    width: 40%;
+    height: auto;
+}
+
+/*************************************************
+            HEADER
+*************************************************/
+header{
+    padding:1rem 2rem;
+    color: black;
+    display: block;
+    background-image: url(/local-image/download.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header > h1{
+    font-size: 3.5rem;
+    color: hsl(0, 0%, 100%);
+}
+header > h2{
+    font-size: 2rem;
+}
+/*************************************************
+            NAVMENU
+*************************************************/
+nav {
+    padding:1rem 2rem;
+}
+.mainnav{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+    background-color: rgb(204, 204, 204);
+}
+nav > a,
+nav > a:visited,
+nav > a:link{
+   color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+}
+nav > a:active,
+nav > a:focus,
+nav > a:hover{
+}
+/*************************************************
+            MAIN CONTENT
+*************************************************/
+main{
+    font-size: 1.25rem;
+    padding:1rem 2rem;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 15px solid rgb(255, 166, 0);
+}
+section{ 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+section > h1{
+    color: rgb(153, 235, 255);
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+section > h2{
+    color: rgb(153, 235, 255);
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+section p{
+}
+section p img{
+    float: left;
+}
+
+/*************************************************
+            FOOTER
+*************************************************/
+footer{
+    padding:1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.foot nav{
+    display: flex;
+    justify-content: flex-start;
+}
+.foot section{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; 
+    margin-top: 1rem;
+    line-height: 40px;
+    border-radius: 5px;
+    width: 100%;
+}
+.foot dl{
+    margin-left: 5rem;
+    margin-right: 5rem;
+   display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.foot dt{
+    font-size: 1.5rem;
+}
+.foot dd{
+  
+}
+.foot dd a,
+.foot dd a:visited{
+    
+}
+.foot dd a:active,
+.foot dd a:focus,
+.foot dd a:hover{
+    
+}
+/*************************************************
+            MEDIA QUERIES for layout
+*************************************************/
+@media (max-width: 599px){
+.mainnav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+}
+nav > a,
+nav > a:visited,
+nav > a:link{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    border-bottom-color: rgb(179, 255, 179);
+}
+footer{
+        display: flex;
+        flex-direction: column;
+}
+input{
+    width: 100%;
+    padding: 5px;
+}
+.foot dl{
+    margin-left: 0;
+    margin-right: 170px;
+}  
+img{
+        width: 200px;
+        height: auto;
+}
+}
+@media (min-width: 600px) and (max-width:999px){
+main{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom-color: rgb(153, 235, 255);
+    }
+section p img{
+    float: left;
+    }
+img{
+        width: 200px;
+        height: 250px;
+    }
+footer{
+        display: flex;
+        flex-direction: column;
+}
+.foot dl{
+    margin-left: 0;
+    margin-right: 230px
+}  
+input{
+        width: 90%;
+        padding: 15px;
+        margin: 8px 0;
+    font-size: 1rem;
+}
+@media (min-width: 1000px){
+img{
+    width: 40%;
+    height: auto;
+}
+}
